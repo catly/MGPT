@@ -4,8 +4,23 @@
  2. Graph Pre-training
  3. Sub-graph Representation
 ## Datasets
-Our experiments were conducted on two public data sets: Luo’s data [1] and Zheng’s [2] data, which include various drug associations. We provide all the data for these two datasets at MGPT/get_nodefeature_module/data
+Our experiments were conducted on two public data sets: Luo’s data [1] and Zheng’s data [2], which include various drug associations. We provide all the data for these two datasets at MGPT/get_nodefeature_module/data
 
+## Examples Instructions
+Take the Zheng’s dataset for example.
+ 1. Constructing heterogeneous graph:
+```
+ MGPT/get_nodefeature_module/test/random_vector_generation_10000_zheng.py
+ MGPT/get_nodefeature_module/graph_dti/shuffle_save_down_graph.py
+```
+2. Graph Pre-training:
+```
+MGPT/prompt_module/pretrain.py
+```
+3. Sub-graph Representation:
+```
+MGPT/prompt_module/run.py
+```
 
 ## References
 ```
